@@ -12,6 +12,6 @@
 Construiremos a arquitetura a seguir para os 3 ambientes, seguindo a boa prática de que o ambiente de desenvolvimento deve ser o mais parecido possivel com o de produção, onde iremos apenas
 alterar configuração de hardware de nossas máquinas.
 
-Construiremos a infra a seguir:
+
 
 ![image](https://github.com/giovannipajeu1/IaC-Terraform/assets/83291215/da1175d9-d496-4c87-a9ed-23a46490040a)
