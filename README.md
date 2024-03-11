@@ -8,7 +8,6 @@
   
 - <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg"> **Terraform**: Criação do Ambiente
 
-- <img align="left" height="20" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-original.svg"> **Kubernetes**: Orquestração Dos Containers
 
 Construiremos a arquitetura a seguir para os 3 ambientes, seguindo a boa prática de que o ambiente de desenvolvimento deve ser o mais parecido possivel com o de produção, onde iremos apenas
 alterar configuração de hardware de nossas máquinas.
