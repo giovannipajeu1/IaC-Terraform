@@ -1,6 +1,6 @@
 resource "aws_vpc" "avg_vpc" {
-  cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
+  cidr_block       = var.cidr_block_vpc
+  instance_tenancy = var.instance_tenancy
 
   tags = {
     name = "avg-vpc"
@@ -9,7 +9,7 @@ resource "aws_vpc" "avg_vpc" {
 
 resource "aws_subnet" "avg_subnet_pub" {
   vpc_id     = aws_vpc.avg_vpc.id
-  cidr_block = "10.0.0.0/24"
+  cidr_block = var.cidr_block_subnet_pub
 
   tags = {
     name = "SubNet Publica"
@@ -18,7 +18,7 @@ resource "aws_subnet" "avg_subnet_pub" {
 
 resource "aws_subnet" "avg_subnet_priv" {
   vpc_id     = aws_vpc.avg_vpc.id
-  cidr_block = "10.0.1.0/24"
+  cidr_block = var.cidr_block_subnet_priv
 
   tags = {
     name = "SubNet Privada"
@@ -66,7 +66,7 @@ resource "aws_route_table" "aws_route_table_privada" {
   vpc_id = aws_vpc.avg_vpc.id
 
   route {
-    cidr_block = "0.0.0.0/0"
+    cidr_block     = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.aws_nat_gateway.id
   }
 

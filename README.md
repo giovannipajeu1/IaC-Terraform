@@ -13,10 +13,5 @@
 Construiremos a arquitetura a seguir para os 3 ambientes, seguindo a boa prática de que o ambiente de desenvolvimento deve ser o mais parecido possivel com o de produção, onde iremos apenas
 alterar configuração de hardware de nossas máquinas.
 
-Nessa arquitetura, usaremos o EKS -  Elastic Kubernetes Service como Cluster.
-
-
-![image](https://github.com/giovannipajeu1/IaC-Terraform/assets/83291215/b5bcb0e1-5b6e-4c46-9e5f-f3a4a9506160)
-
 
 
